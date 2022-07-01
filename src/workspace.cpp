@@ -471,6 +471,8 @@ void Workspace::cleanupX11()
 
 Workspace::~Workspace()
 {
+    Q_EMIT workspaceDestroyed();
+
     blockStackingUpdates(true);
 
     cleanupX11();

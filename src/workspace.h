@@ -511,6 +511,7 @@ Q_SIGNALS:
     void geometryChanged();
 
     // Signals required for the scripting interface
+    void workspaceDestroyed();
     void desktopPresenceChanged(KWin::Window *, int);
     void currentActivityChanged();
     void currentDesktopChanged(int, KWin::Window *);

@@ -82,6 +82,7 @@ private:
     Q_DISABLE_COPY(WorkspaceWrapper)
 
 Q_SIGNALS:
+    void workspaceDestroyed();
     void desktopPresenceChanged(KWin::Window *client, int desktop);
     void currentDesktopChanged(int desktop, KWin::Window *client);
     void clientAdded(KWin::Window *client);
